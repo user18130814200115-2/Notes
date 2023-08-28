@@ -80,8 +80,98 @@ These various conditionals will be formalized using the following symbols:
 \part{Indicatives}
 \chapter{The material analysis}
 
+``The material analysis'' is a general term for analysing the indicative
+conditional ($\rightarrow$) as being logically equivalent to the material
+conditional ($\supset$)\footnote{This is also sometimes called ``the horseshoe
+analysis'', referring to the shape of the material conditional symbol
+($\supset$).}. The difficulty in proving the material analysis comes in the fact
+that the indicative conditional cannot be assumed to be truth-functional, thus
+not allowing a mere truth-functional analysis.
 
+If the indicative conditional is truth-functional, it must be equivalent to the
+material conditional. This belief stems from the following proof:
+\begin{enumerate}
+	\item
+		$P \land Q \rightarrow P$ is assumed to be a logical truth 
+	\item
+		$A \rightarrow C$ is assumed not to be a logical truth
+\end{enumerate}
 
+Given these assumptions, if $\rightarrow$ is truth functional, it must function
+in the same way in every case. Assuming that (1) is a logical truth allows us to
+derive the following three truths:
+\begin{itemize}
+	\item
+		$F \rightarrow T$
+	\item
+		$T \rightarrow T$
+	\item
+		$F \rightarrow F$
+\end{itemize}
+Given (2), and the derived truths, we can also know derive one falsehood:
+\begin{itemize}
+	\item
+		$T \rightarrow F$
+\end{itemize}
+Which leaves us with the truth table for the material conditional.
+
+The reason this discussion remains interesting is because (1) and (2) are
+assumed, rather than argued for.
+
+\section{Argument for the material analysis}
+
+One reason for accepting the material analysis is the following: Given two
+mutually exclusive things, the indicative cannot be true. Similarly, the
+material conditional cannot be true. Meaning that the material conditional
+\emph{entails} the indicative.
+
+More interesting is the other direction (the indicative conditional entailing
+the material conditional). This is called the ``or to if'' analysis which goes
+as follows: Given two options, if we know that one option is not the case, it
+implies that the other is. This is a widely held assumption which leads us to
+accept that the indicative \emph{entails} the material conditional.
+
+Given that the material conditional and indicative entail each other, they are
+logically equivalent.
+
+\section{Paradoxes}
+
+Despite the aforementioned ``proof'', there are cases where we encounter
+paradoxes due to the fact that any false antecedent leads to a true statement in
+the medial conditional. Or the fact that a true consequent, leads to a true
+statement. While these are logically coherent truths, the ability to put
+\emph{any} consequent or antecedent, whether nonsensical, related or otherwise,
+allows us to prove anything we wish.
+
+\section{Implicatures}
+
+If something is ``implied'', it is not stated directly, but nevertheless
+conveyed. It may be said that $A \rightarrow C$ \emph{states} only $A \supset
+C$, while \emph{implying} more. Such non-direct statements make problems for the
+paradoxes listed above.
+
+Grice distinguishes between conversational-, and conventional-implicates, which
+together remove the paradoxes from the material analysis.
+
+\subsection{Conversational Implicatures}
+
+In a conversation, we implicitly follow a certain principle know as ``the
+cooperative principle'' and we are allowed to assume that our interlocutors
+follow this principle. The principle can be generalized as a set of rules such
+as:
+\begin{enumerate}
+	\item
+		Say no more or less than appropriate
+	\item
+		Make true contributions
+	\item
+		Be relevant to the topic being discussed
+	\item
+		etc.
+\end{enumerate}
+
+There are various -- intentional and unintentional -- ways in which we violate
+these rues where we imply certain information while staying cooperative.
 
 \chapter{Non-material analyses}
 
