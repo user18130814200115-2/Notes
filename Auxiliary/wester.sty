@@ -1,0 +1,50 @@
+\ProvidesPackage{wester}
+
+%page setup
+\usepackage[a4paper, margin=3.7cm]{geometry}
+
+% List formatting
+\renewcommand\labelitemi{--}
+
+% Section formatting
+\makeatletter
+\renewcommand{\section}{%
+\@startsection {section}{1}{\z@ }{-3.5ex \@plus -1ex \@minus -.2ex}{2.3ex \@plus .2ex}{\normalfont \large}
+}
+\renewcommand{\subsection}{%
+\@startsection {subsection}{2}{\z@ }{-3.25ex\@plus -1ex \@minus-.2ex}{1.5ex \@plus .2ex}{\normalfont}
+}
+\makeatother
+
+% Title setup
+%% allow subtiltes
+\makeatletter
+\newcommand{\@subtitle}[1]{}
+\newcommand{\subtitle}[1]{\renewcommand{\@subtitle}{#1}}
+\makeatother
+
+%% maketitle changes
+\makeatletter
+\def\@maketitle{%
+\newpage \null \vskip 2em\vspace *{\skip77 }
+ {\begin{center} \vspace{-2.5cm} \large \@title \par\end{center} }
+ {\begin{center} \vspace{-.4cm} \@subtitle \par\end{center} }
+ {\begin{center} \@author \par\end{center} }
+ 
+ \par
+ \vskip 1.5em
+}
+\makeatother
+
+
+% Citation Needed
+\newcommand{\cine}{\textsuperscript{[citation needed]}~}
+
+\newcommand{\dual}[2]{\vspace{2mm}\noindent\hspace{.01\textwidth}\begin{minipage}[t]{.48\textwidth}#1\end{minipage}\hspace{.02\textwidth}\begin{minipage}[t]{.48\textwidth}#2\end{minipage}\vspace{3mm}}
+
+
+
+
+
+
+\endinput
