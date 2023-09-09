@@ -1,0 +1,101 @@
+\documentclass[12pt]{article}
+\usepackage{../Auxiliary/wester}
+
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\setotherlanguage[variant=ancient]{greek}
+
+%\usepackage[style=philosophy-classic, language=english, uniquename=init, mincitenames=2, minbibnames=2]{biblatex}
+%\addbibresource{/home/user/.local/share/latex/general.bib}
+
+\usepackage{amssymb}
+
+\newcommand{\would}{\mathbin{\Box}{\rightarrow}}
+\newcommand{\might}{\mathbin{\Diamond}{\rightarrow}}
+
+\title{Philosophy of Language and Logic}
+\subtitle{Reading summary\\Monday September 11th 2023}
+\date{Monday September 11th, 2023}
+\author{Wester, T.I.}
+
+\begin{document}
+\maketitle
+
+
+The first three sections of Lewis' paper on counterfactuals cover roughly three
+topics. First is the matter of possible world semantics. Second is the defence
+of the claim that the counterfactual cannot be a strict conditional. Third is
+the defence of Lewis' analysis of the counterfactual as a variable conditional.
+
+\section{Possible world semantics}
+
+In possible world semantics, a world describes a certain state of things wherein
+all truth values are included. Worlds exist in accessibility relations to each
+other, every world ($W_n$) wherein the truth values are not impossible in
+relation to a starting world ($A$) makes for an accessibility relation between
+$A$ and $W_n$. This relation is no necessarily symmetrical. It is generally
+taken that $A$ is also in $W$.
+
+Thus, we have for instance the actual world $A$ and a set of worlds $W$ which
+are accessible from $A$. Is a certain proposition $\phi$ is true in every world
+in $W$, then $\phi$ is necessary, expressed as $\Box \phi$. If $\phi$ holds
+true in at least one world in $W$, then $\phi$ is possible, expressed as
+$\Diamond \phi$. Of course $\Box \phi \supset \Diamond \phi$.
+
+\subsection{Counterfactual}
+
+Building on the existing notation, Lewis introduces a symbol for two
+counterfactuals $\would$ and $\might$ these two indicating respectively sentences
+of the structure ``If it were the case that $x$ then it \emph{would} be the case
+that $y$'' and  ``If it were the case that $x$ then it \emph{might} be the case
+that $y$''.
+
+\section{Strict conditional}
+
+Lewis then goes on to argue that $\would$ can not be a strict conditional.
+Strict conditionals are conditionals of the type $\Box(\phi \supset \psi)$.
+Meaning that in every world accessible from the current one, the proposition
+$\phi \supset \psi$ holds true. This then, Lewis argues is distinctly different
+from saying ``If it were the case that $\phi$, then it would be the case that
+$\psi$''. The difference between strict conditionals and counterfactuals comes
+when we consider several of them together.
+
+Lewis formulates various examples where new information to a given scenario
+reverses the outcome. Neither the first implication nor the one with added
+information make the counterfactual act unlike a strict conditional, but any two
+taken together do.
+
+I have one problem with Lewis' formulation, namely that his examples don't
+strictly hold true. ``If you walk on the lawn, the lawn will be fine, but
+everyone did, the lawn would be ruined''. The first part of this sentence is not
+true, because it assumes the information in the second one. As with most logical
+implicatures, there is a lot of background information that is silently assumed.
+So too for the party example, ``If Otto had come, it would have been a lively
+party'' says Lewis, but Otto came, and the party was not lively, because Otto's
+nemesis Anna was also present. The first statement is simply not true. If there
+is a party with a number of attendants, then the statement can be made that the
+party would have been lively \emph{if only} Otto had come. But if the guest list
+is unknown, the statement is simply false.
+
+Lewis then explains how the strictness of the strict conditional restricts it to
+certain accessibility relationships with possible worlds -- or, as he calls
+them, spheres of influence. Taking the examples he gave before, he says that
+there exist no level of strictness wherein each statement is true on its own
+(with or without extraneous informations), but wherein they nevertheless do not
+contradict each other.
+
+\section{Variably strict conditionals}
+
+Having concluded that there is not level of strictness that allows the
+counterfactual to operate as a strict conditional, Lewis moves on to stating and
+defending his own point of view; that counterfactuals operate as variably strict
+conditionals. This allows for the existence of a set of spheres of influence for
+the examples above, wherein the sphere is such that it allows for truth in one
+case, whist just missing out on the extra information which would falsify the
+statement in a different sphere.
+
+In other words, the accessibility relations between words are such that new ones
+are added alongside the new information so as to change the possibilities.
+
+
+\end{document}
