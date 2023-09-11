@@ -274,7 +274,42 @@ one may claim this to also be context dependent.
 \part{Subjunctives}
 \chapter{Similarity semantics}
 
+TO talk about subjunctives, propositional logic needs to be expanded with modal
+operators. Modal logic speaks about necessary and possible things, represented
+respectively by $\Box$ and $\Diamond$, either of which can be taken as a
+primitive for modal logic. Crucially, $\Box$ and $\Diamond$ are not truth
+functional, as for any $p$, $\Box p$ is unsolvable if $p$ is true, and false if
+$p$ is false.
 
+\begin{tabular}{l|l}
+$p$ & $\Box P$ \\
+\hline
+T & \\
+F & F\\
+\end{tabular}
+
+To analyse modality then, we use the method of possible worlds. Something is
+necessary if it is the case in every possible world, whereas it is possible if
+true in at least one world. In doing this, we limit ourselves to certain worlds
+as described by an accessibility relation. 
+
+Strict conditionals are a type of material conditional where the implication is
+taken as necessary $\Box(A \supset C)$. This is true if $A \supset C$ is true in
+every accessible world.
+
+The subjunctive $A \would C$ is sometimes analysed as being equivalent to $\Box
+(A \supset C)$ This makes the subjunctive a strict conditional. Lewis argues
+against this idea. 
+
+He does this through Antecedent Strengthening. This is a structure where, in any
+given world, $\Box(A \supset C)$ is true and $\Box A \land B \supset C$ is also
+true by extension. However, for subjunctives, there are many examples where $B
+\supset \lnot C$.
+
+Lewis thus concludes that $\would$ is not a strict conditional, it is a variably
+strict conditional, where the accessibility of worlds id dependent on the
+antecedent. This is called similarity semantics, as only those worlds are
+considered that are more similar to the world of evaluation.
 
 \chapter{Non-similarity semantics}
 
