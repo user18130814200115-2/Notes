@@ -14,8 +14,8 @@
 \renewcommand{\chaptername}{Lecture}
 
 \usepackage{amssymb}
-\newcommand{\would}{\mathbin{\Box}{\rightarrow}}
-\newcommand{\might}{\mathbin{\Diamond}{\rightarrow}}
+\newcommand{\would}{{\mathbin{\Box}{\rightarrow}}}
+\newcommand{\might}{{\mathbin{\Diamond}{\rightarrow}}}
 
 
 
@@ -310,6 +310,41 @@ Lewis thus concludes that $\would$ is not a strict conditional, it is a variably
 strict conditional, where the accessibility of worlds id dependent on the
 antecedent. This is called similarity semantics, as only those worlds are
 considered that are more similar to the world of evaluation.
+
+To check the truth value of a subjunctive conditional under similarity
+semantics, we must look at the closest worlds where the antecedent is true. The
+closest here means that we do not look at worlds that are any more different
+from the actual world than necessary. Of course, any subjunctive can be made
+false or true depending on the accessibility relations and the truth values of
+the consequent in every accessible antecedent-world.
+
+One matter under discussion is weather multiple worlds can be equally similar or
+dissimilar to a given reference world. According to Lewis: $w$, where $A \land
+B$, is dissimilar in equal amounts to $w'$, where $A \land \lnot B$ and $w^*$,
+where $\lnot A \land B$. According to Stalnaker, there is a priority of
+propositions, where -- for instance -- $A$ being different is more substantial
+than $B$ being different, thus placing $w'$ and $w^*$ exist in different
+spheres. Stalnaker's theory leaves the question of \emph{why} this priority
+exists.
+
+Stalnaker appeals to the vague nature of subjunctives, thus making it that there
+is not a single correct function which selects the closest antecedent world. A
+subjunctive in Stalnaker's theory then is true according to every possible
+selection function. This is called supervaluation, and it allows for the
+benefits of Lewis' theory while still only allowing one most similar world
+\emph{per selection function}. In problematic cases, one may then speak of truth
+as being truth in all possible worlds under a specific selection function, while
+we speak of super-truth if the proposition is true under every relevant
+selection function.
+
+Lewis believes that $\would$ and $\might$ stand in a simmilar relationship as
+$\Box$ and $\Diamond$ in that $\Diamond p \equiv \lnot \Box \lnot p$ and $a
+\might c \equiv \lnot (a \would \lnot c)$. This allows us to get truth values
+for ``might'' sentences, as we can now translate them as ``would sentences''.
+
+This is not possible in Stalnaker's account, as it requires a singular closest
+world, making $\would$ and $\might$ the same. Thus, Stalnaker gives a different
+account of $\might$
 
 \chapter{Non-similarity semantics}
 
